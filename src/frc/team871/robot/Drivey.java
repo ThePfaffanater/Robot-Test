@@ -1,12 +1,13 @@
 package frc.team871.robot;
 
 import com.kauailabs.navx.frc.AHRS;
+import edu.wpi.first.wpilibj.PIDOutput;
 import edu.wpi.first.wpilibj.Talon;
 import edu.wpi.first.wpilibj.drive.MecanumDrive;
 import frc.team871.tools.EnhancedXBoxController;
 import org.usfirst.frc.team871.tools.XBoxAxes;
 
-public class Drivey {
+public class Drivey implements PIDOutput {
 
     private Talon rB;
     private Talon lB;
@@ -79,4 +80,8 @@ public class Drivey {
         mechDrive.drivePolar(mag, dir, rot);
     }
 
+    @Override
+    public void pidWrite(double output) {
+
+    }
 }

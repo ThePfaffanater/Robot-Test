@@ -73,6 +73,11 @@ public class Robot extends IterativeRobot
 
     }
 
+    @Override
+    public void disabledInit(){
+
+    }
+
     /**
      * This autonomous (along with the chooser code above) shows how to select
      * between different autonomous modes using the dashboard. The sendable
